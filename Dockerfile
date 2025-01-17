@@ -4,12 +4,15 @@ FROM openjdk:17-jdk-slim
 # Set the working directory inside the container
 WORKDIR /app
 
-# Copy the Maven wrapper and the pom.xml file into the container
+# Copy the Maven wrapper and necessary files
 COPY mvnw .
 COPY .mvn .mvn
 COPY pom.xml .
 
-# Download all dependencies to the Maven cache
+# Give executable permission to the Maven wrapper
+RUN chmod +x mvnw
+
+# Download dependencies to the Maven cache
 RUN ./mvnw dependency:go-offline -B
 
 # Copy the source code into the container
