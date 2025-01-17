@@ -18,6 +18,9 @@ RUN ./mvnw dependency:go-offline -B
 # Copy the source code into the container
 COPY src src
 
+# Copy the pre-built JAR file into the container
+COPY target/portfolio-tracker-backend-0.0.1-SNAPSHOT.jar app.jar
+
 # Package the application
 RUN ./mvnw clean package -DskipTests
 
