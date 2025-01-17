@@ -1,0 +1,11 @@
+D:\Z INTERN\CapX\PORTFOLIO TRACKER\portfolio-tracker-backend\src\main\java\com\example\portfolio\controller\DashboardController.java
+D:\Z INTERN\CapX\PORTFOLIO TRACKER\portfolio-tracker-backend\src\main\java\com\example\portfolio\controller\StockController.java
+D:\Z INTERN\CapX\PORTFOLIO TRACKER\portfolio-tracker-backend\src\main\java\com\example\portfolio\dto\DashboardStats.java
+D:\Z INTERN\CapX\PORTFOLIO TRACKER\portfolio-tracker-backend\src\main\java\com\example\portfolio\dto\StockDistribution.java
+D:\Z INTERN\CapX\PORTFOLIO TRACKER\portfolio-tracker-backend\src\main\java\com\example\portfolio\exception\GlobalExceptionHandler.java
+D:\Z INTERN\CapX\PORTFOLIO TRACKER\portfolio-tracker-backend\src\main\java\com\example\portfolio\model\Stock.java
+D:\Z INTERN\CapX\PORTFOLIO TRACKER\portfolio-tracker-backend\src\main\java\com\example\portfolio\PortfolioBackendApplication.java
+D:\Z INTERN\CapX\PORTFOLIO TRACKER\portfolio-tracker-backend\src\main\java\com\example\portfolio\repository\StockRepository.java
+D:\Z INTERN\CapX\PORTFOLIO TRACKER\portfolio-tracker-backend\src\main\java\com\example\portfolio\service\DashboardService.java
+D:\Z INTERN\CapX\PORTFOLIO TRACKER\portfolio-tracker-backend\src\main\java\com\example\portfolio\service\StockService.java
+D:\Z INTERN\CapX\PORTFOLIO TRACKER\portfolio-tracker-backend\src\main\java\com\example\portfolio\service\StockServiceImpl.java
