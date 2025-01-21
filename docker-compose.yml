@@ -1,0 +1,7 @@
+version: '3.9'  # Use a recommended version for compatibility
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8081"
+    restart: always
