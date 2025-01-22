@@ -61,8 +61,8 @@ public class StockServiceImpl implements StockService {
      */
     private BigDecimal fetchRealTimePrice(String ticker) {
         //String apiKey = "IOW2CU52KSZ5IUA9"; // Replace with your actual API key
-	//String apiKey = "NJ9DX4CNHL7AZ5Z4";
-	String apiKey = "30CO7P3MM54Y0GK3";
+	String apiKey = "NJ9DX4CNHL7AZ5Z4";
+	//String apiKey = "30CO7P3MM54Y0GK3";
 	//String apiKey = "A7ABH0K2MWHX9I78";
 	//String apiKey = "TNCP2RGNPOAGN9ST";        
 
@@ -96,7 +96,7 @@ public class StockServiceImpl implements StockService {
      * Scheduled task to update stock prices.
      * Runs every 60 seconds to fetch and update real-time prices.
      */
-    @Scheduled(fixedRate = 120000) // Runs every 2 minutes
+    @Scheduled(fixedRate = 600000) // Runs every 10 minutes
     public void updateStockPrices() {
         List<Stock> stocks = stockRepository.findAll();
         for (Stock stock : stocks) {
