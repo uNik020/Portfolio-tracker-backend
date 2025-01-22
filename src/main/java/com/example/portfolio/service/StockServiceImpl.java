@@ -63,8 +63,8 @@ public class StockServiceImpl implements StockService {
         //String apiKey = "IOW2CU52KSZ5IUA9"; // Replace with your actual API key
 	//String apiKey = "NJ9DX4CNHL7AZ5Z4";
 	//String apiKey = "30CO7P3MM54Y0GK3";
-	//String apiKey = "A7ABH0K2MWHX9I78";
-	String apiKey = "TNCP2RGNPOAGN9ST";        
+	String apiKey = "A7ABH0K2MWHX9I78";
+	//String apiKey = "TNCP2RGNPOAGN9ST";        
 
 
 
