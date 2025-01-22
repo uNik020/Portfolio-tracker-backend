@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@CrossOrigin(origins ="https://stocker-simple-portfolio-tracker.netlify.app")
+@CrossOrigin(origins ="https://stocker-simple-portfolio-tracker.netlify.app/dashboard")
 
 @RestController
 public class DashboardController {
