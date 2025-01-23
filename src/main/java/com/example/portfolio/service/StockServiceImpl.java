@@ -60,12 +60,12 @@ public class StockServiceImpl implements StockService {
      * @return the current price as a BigDecimal
      */
     private BigDecimal fetchRealTimePrice(String ticker) {
-        //String apiKey = "IOW2CU52KSZ5IUA9"; // Replace with your actual API key
+        String apiKey = "IOW2CU52KSZ5IUA9"; // Replace with your actual API key
 	//String apiKey = "NJ9DX4CNHL7AZ5Z4";
 	//String apiKey = "30CO7P3MM54Y0GK3";
 	//String apiKey = "A7ABH0K2MWHX9I78";
 	//String apiKey = "TNCP2RGNPOAGN9ST";        
-	String apiKey = "2MW1OCLBTBY39YIF";
+	//String apiKey = "2MW1OCLBTBY39YIF";
 
 
 	String url = "https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=" + ticker + "&apikey=" + apiKey;
@@ -96,7 +96,7 @@ public class StockServiceImpl implements StockService {
      * Scheduled task to update stock prices.
      * Runs every 60 seconds to fetch and update real-time prices.
      */
-    @Scheduled(fixedRate = 60000) // Runs every 10 minutes
+    @Scheduled(fixedRate = 600000) // Runs every 10 minutes
     public void updateStockPrices() {
         List<Stock> stocks = stockRepository.findAll();
         for (Stock stock : stocks) {
